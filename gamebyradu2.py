@@ -1,0 +1,202 @@
+def scene_start():
+    print("you wake up in a strange room. Its dark. You have a flashlight and a teddy bear.")
+    choice = input("what do you use?   >>>")
+    if choice == "flashlight":
+        return "Scene1"
+    elif choice == "teddybear":
+        return "Scene2"
+    return "start"
+
+def scene_1():
+    print("the room lightens up. you see 3 doors, red, yellow, green.")
+    choice2 = input("what door do you go?  >>>")
+    if choice2 == "red":
+        return "RedDoor"
+    elif choice2 == "yellow":
+        return "YellowDoor"
+    elif choice2 == "green":
+        return "GreenDoor"
+    return "Scene1"
+    
+def scene_red():
+    print("you go through the red door. You see a message, it says 'elppa rood'. there is a paper and a pencil. " \
+    "You need to decrypt the message")
+    choice3 = input("what do you write?  >>>")
+    if choice3 == "apple door":
+        return "magicdoor"
+    return "RedDoor"
+    
+def scene_apple():
+    print("You write the word, and a secret door has opened. You go there and you see a book." \
+    "it says 'for you..'")
+    choice4 = input("what do you do with the book?  >>>")
+    if choice4 == "read":
+        return "read"
+    return "magicdoor"
+    
+def scene_read():
+    print (" Dear Player, all of this is a dream. You are in a hospital, barely surviving. This?" \
+        "This is a place you created, where no one is mean to you and bullies you. If you look around, " \
+        "you will see all of your family members really loving you. All of your friend liking you. " \
+        "I am telling the truth. WAKE UP")
+    choice0 = input("what do you do?  >>>")
+    if choice0 == "wake up":
+        return "fuck"
+    return "read"
+
+def scene_fuck():
+    print("you wake up in the hospital, you dont want to. U get out of bed and try to kill yourself. " \
+    "You fail. You start to cry because you miss the word created by you. im sorry...")
+    choice01 = input("want to start again?  >>>")
+    if choice01 == "yes":
+        return "start"
+    elif choice01 == "no":
+        return None
+    return "fuck"
+
+def scene_yellow():
+    print("You go through the yellow door, and you see a guy. You cant remember his face. He asks you: ")
+    choice5 = input("do you love yourself?  >>>")
+    if choice5 == "yes":
+        print("good")
+        return "cooldoor"
+    elif choice5 == "no":
+        print("F-F-F-FUCK Y-Y-YOU")
+        return "cooldoor"
+    return "YellowDoor"
+    
+def scene_cool():
+    print("A door opens behind the man. He says 'go'. You go and you see some cameras. you can watch them")
+    choice6 = input("you want to watch it?  >>>")
+    if choice6 == "yes":
+        return "camera"
+    elif choice6 == "no":
+        print("you say no, but the man puts a gun at your head and says 'watch.. it..'." \
+        "you start to watch out of fear of death")
+        return "camera"
+    return "cooldoor"
+
+def scene_camera():
+    print("you watch the cameras. You see yourself in a hospital bed. your head starts to hurt like shit" \
+    "a note is in the left corner. you can read it.")
+    choice7 = input("what do you do?  >>>")
+    if choice7 == "read":
+        return "read"
+    return "camera"
+    
+def scene_green():
+    print("you go through the green door. You see a pair a glasses, but they look funny. you are too curious")
+    choice8 = input("do you wear the glasses?  >>>")
+    if choice8 == "yes":
+        return "?"
+    elif choice8 == "no":
+        print("you still put the glasses on")
+        return "?"
+    return "GreenDoor"
+
+def scene_huh():
+    print("you put the glasses, and then you feel wierd. You wake up at a table," \
+    " your whole family is here, your friends are there, even your gf is here" \
+    "They love you, for the first time... In front of you is a gun. You feel the urgde to kill all of them.")
+    choice9 = input("do you shoot them?  >>>")
+    if choice9 == "yes":
+        print("You shoot them all in the head")
+        return "fuck"
+    if choice9 == "no":
+        return "goodending"
+    return "?"
+
+def scene_good():
+    print("You dont kill them. It feels great knowing they love you. You forget all about the doors. The truth?" \
+    "You are dead. You were in a coma and you gave up and died.")
+    choice10 = input("want to start again?  >>>")
+    if choice10 == "yes":
+        return "start"
+    elif choice10 == "no":
+        return None
+    return "goodending"
+
+def scene_bear():
+    print("you lay down and u hold tightly your bear... why?" \
+    "a door opens behind you.")
+    choice11 = input("do you go through the door?")
+    if choice11 == "yes":
+        return "bear"
+    elif choice11 == "no":
+        return "die"
+    return "Scene2"
+
+def scene_bear2():
+    print("You go through the door. There is a man. he says: " \
+    "'i guess you found me..' there are some cameras in the back")
+    choice12 = input("do you watch the cameras?  >>>")
+    if choice12 == "yes":
+        return "end2"
+    elif choice12 == "no":
+        return "die2"
+    return "bear"
+
+def scene_doorb():
+    print("you watch the cameras. There are other people in here. You back up in disbelief, " \
+    "there are people here just like you. You cant seem to remember how did you get here." \
+    "then the man pulls a gun and says 'you know too much' and kills you")
+    choice13 = input("want to start again?  >>>")
+    if choice13 == "yes":
+        return "start"
+    elif choice13 == "no":
+        return None
+    return "end2"
+
+def scene_dead():
+    print("you lie down, holding your bear. You are scared but you dont know why?" \
+    "you start to cry. You start missing your family, your friends," \
+    "even if they didnt love you, you loved them." \
+    "your eyes start closing. You know you are dead, and you accept it." \
+    "goodbye player...")
+    choice14 = input("want to start again?  >>>")
+    if choice14 == "yes":
+        return "start"
+    elif choice14 == "no":
+        return None
+    return "endthree"
+
+def scene_died2():
+    print("The man pulls a gun. he says 'these people?" \
+    "these people are dying, just like you." \
+    "you are in a coma, for 7 months. you could come back, if you didnt choose the teddybear" \
+    "you are stupid player. goodbye' he shoots you in the head.")
+    choice15 = input("want to start again?  >>>")
+    if choice15 == "yes":
+        return "start"
+    elif choice15 == "no":
+        return None
+    return "end4"
+
+
+
+
+scenes = {
+    "start": scene_start,
+    "Scene1": scene_1,
+    "RedDoor": scene_red,
+    "magicdoor": scene_apple,
+    "read": scene_read,
+    "fuck": scene_fuck,
+    "YellowDoor": scene_yellow,
+    "cooldoor": scene_cool,
+    "camera": scene_camera,
+    "GreenDoor": scene_green,
+    "?": scene_huh,
+    "goodending": scene_good,
+    "Scene2": scene_bear,
+    "bear": scene_bear2,
+    "end2": scene_doorb,
+    "endthree": scene_dead,
+    "end4": scene_died2,
+
+}
+
+
+current = "start"
+while current is not None:
+    current = scenes[current]()
